@@ -1,0 +1,270 @@
+#tux{
+	    position:relative;
+}
+#head{
+	    position: absolute;
+		          left: 80px; top: 0;
+				    width: 90px;
+					       height: 110px;
+						           background: black;
+								           -moz-border-radius: 50px 70px 0 0;
+									       border-radius: 50px 70px 0 0;
+									           z-index:2;
+}
+
+#left-eye, #right-eye {
+	   position: absolute; 
+		        width: 20px;
+			          height: 20px;
+					     background: white; 
+							    -moz-border-radius: 10px; 
+							       -webkit-border-radius: 10px; 
+							          border-radius: 10px;
+								      top: 60px;
+left: 10px;
+}
+#right-eye{
+	    left: 45px;
+}
+#inner-left-eye, #inner-right-eye {
+	   position: relative;
+		        //content: "";
+		         width: 12px;
+				    height: 12px;
+					        //vertical-align:bottom;
+					        margin: 7px auto 0px auto;
+							    background: black; 
+									   -moz-border-radius: 5px; 
+									      -webkit-border-radius: 5px; 
+									         border-radius: 5px;  
+}
+#mouth{
+width: 50px;
+height:50px;
+position:absolute;
+	     top: 80px;
+left: 15px;
+      border-radius: 120px 44px;
+      background-image: -webkit-gradient(linear, center top, center bottom, from(#fcff36), to(#e17b19));
+      background-image: -webkit-linear-gradient(top, #fcff36, #e17b19);
+      background-image: -moz-linear-gradient(top, #fcff36, #e17b19);
+      background-image: -o-linear-gradient(top, #fcff36, #e17b19);
+      background-image: -ms-linear-gradient(top, #fcff36, #e17b19);
+      background-image: linear-gradient(top, #fcff36, #e17b19);
+             -webkit-transform: rotate(45deg);
+	        -moz-transform: rotate(45deg);
+		   -ms-transform: rotate(45deg);
+		      -o-transform: rotate(45deg);
+		         transform: rotate(45deg);
+				        border-right:2px solid #000;
+}
+#mouth div{
+	    width: 20px;
+		       height: 45px;
+			           margin-left:15px;
+				       border: 2px solid #999;
+					           border-color: transparent transparent #999 transparent;
+						       -moz-border-radius: 0 0 90px 0;
+						           border-radius: 0 0 90px 0;
+}
+#center{
+	   display:inline-block;
+		      width:146px; 
+			    /* width has to be 70% of height */
+			    /* could use width:70%; in a square container */
+			       height:220px;
+				         background-color:#eee;
+
+					 /* beware that Safari needs actual
+					  *  px for border radius (bug) */
+					    -webkit-border-radius:63px 63px 63px 63px/
+						       108px 108px 72px 72px;
+					       /* fails in Safari, but overwrites in Chrome */
+					       border-radius:50% 50% 50% 50%/60% 60% 40% 40%;
+					           position: relative;
+							     z-index: 1;
+top: 80px;
+left: 30px;
+}
+#body div{
+	    display:inline-block;
+}
+#left-side{
+	    position: relative;
+top: 80px;
+         left: 60px;
+	       z-index: 2;
+}
+#left-side div{
+	    display:block;
+		        position:relative;
+}
+#leftupperhand{
+	    width:0;
+		      height:50px;
+			         border-left:20px solid black;
+				     border-top: 5px solid transparent;
+				         border-bottom:5px solid transparent;
+					     border-radius:20px 0;
+					                -webkit-transform: rotate(15deg);
+							   -moz-transform: rotate(45deg);
+							      -ms-transform: rotate(45deg);
+							         -o-transform: rotate(45deg);
+								    transform: rotate(45deg);
+									           
+}
+#leftlowerhand{
+	    width:0;
+		      height:50px;
+			         border-left:25px solid black;
+				     border-top: 5px solid transparent;
+				         border-bottom:5px solid transparent;
+					     border-radius:20px 0;
+					                -webkit-transform: rotate(-0deg);
+							   -moz-transform: rotate(45deg);
+							      -ms-transform: rotate(45deg);
+							         -o-transform: rotate(45deg);
+								    transform: rotate(45deg);
+									           top: -15px;
+											    left:-10px;
+
+}
+#leftlowesthand{
+	    width:0;
+		      height:70px;
+			         border-left:30px solid black;
+				     border-top: 5px solid transparent;
+				         border-radius:20px 0 20px 20px;
+					            -webkit-transform: rotate(-35deg);
+						       -moz-transform: rotate(45deg);
+						          -ms-transform: rotate(45deg);
+							     -o-transform: rotate(45deg);
+							        transform: rotate(45deg);
+									       top: -30px;
+left: 3px;
+}
+#right-side{
+	    position: relative;
+top: 70px;
+     z-index: 3;
+}
+#right-side div{
+	    display:block;
+		        position:relative;
+}
+#rightupperhand{
+	    width:0;
+		      height:50px;
+			         border-right:30px solid black;
+				     border-top: 5px solid transparent;
+				         border-bottom:5px solid transparent;
+					     border-radius: 0 20px;
+					                -webkit-transform: rotate(-15deg);
+							   -moz-transform: rotate(45deg);
+							      -ms-transform: rotate(45deg);
+							         -o-transform: rotate(45deg);
+								    transform: rotate(45deg);
+									           top:12px;
+										           left:-20px;
+}
+#rightlowerhand{
+	    width:0;
+		      height:50px;
+			         border-right:30px solid black;
+				     border-top: 5px solid transparent;
+				         border-bottom:5px solid transparent;
+					     border-radius: 0 20px;
+					                -webkit-transform: rotate(-20deg);
+							   -moz-transform: rotate(45deg);
+							      -ms-transform: rotate(45deg);
+							         -o-transform: rotate(45deg);
+								    transform: rotate(45deg);
+}
+#rightlowesthand{
+	    width:0;
+		      height:80px;
+			         border-right:30px solid black;
+				     border-top: 5px solid transparent;
+				         border-radius: 0 20px 20px 20px;
+					            -webkit-transform: rotate(45deg);
+						       -moz-transform: rotate(45deg);
+						          -ms-transform: rotate(45deg);
+							     -o-transform: rotate(45deg);
+							        transform: rotate(45deg);
+									       top:-20px;
+										       left:-7px;
+}
+#feet div{
+	    display:inline-block;
+}
+#left-foot{
+	        width:100px;
+		          height:100px;
+				     position:relative;
+					          z-index:2;
+						      -moz-transform: scale(1) rotate(0deg) translate(0px, 0px) skew(12deg, 15deg);
+						      -webkit-transform: scale(1) rotate(0deg) translate(0px, 0px) skew(12deg, 15deg);
+						      -o-transform: scale(1) rotate(0deg) translate(0px, 0px) skew(12deg, 15deg);
+						      -ms-transform: scale(1) rotate(0deg) translate(0px, 0px) skew(12deg, 15deg);
+transform: scale(1) rotate(0deg) translate(0px, 0px) skew(12deg, 15deg);
+	       -moz-border-radius-topleft: 100px;
+	       -moz-border-radius-topright: 20px;
+	       -moz-border-radius-bottomright: 70px;
+	       -moz-border-radius-bottomleft: 20px;
+	       -webkit-border-radius: 100px 20px 70px 20px;
+	       border-radius: 100px 20px 70px 20px;
+	           background:orange;
+			      background-image: -webkit-gradient(linear, center top, center bottom, from(#fbf925), to(#e17b19));
+			      background-image: -webkit-linear-gradient(top, #fbf925, #e17b19);
+			      background-image: -moz-linear-gradient(top, #fbf925, #e17b19);
+			      background-image: -o-linear-gradient(top, #fbf925, #e17b19);
+			      background-image: -ms-linear-gradient(top, #fbf925, #e17b19);
+			      background-image: linear-gradient(top, #fbf925, #e17b19);
+			      -webkit-box-shadow: 0 3px 7px rgba(0,0,0,0.75);
+			      -moz-box-shadow: 0 3px 7px rgba(0,0,0,0.75);
+			      box-shadow: 0 3px 7px rgba(0,0,0,0.75);
+}
+#bottom{
+	 background: black;
+width: 70px;
+height: 20px;
+position: relative;
+top: -20px;
+left: -10px;
+      -webkit-box-shadow: 0 3px 7px rgba(0,0,0,0.75);
+      -moz-box-shadow: 0 3px 7px rgba(0,0,0,0.75);
+      box-shadow: 0 3px 7px rgba(0,0,0,0.75);    
+}
+#right-foot{
+	    width:100px;
+		      height:100px;
+			         position:relative;
+					      z-index:2;
+					          left:-20px;
+						           background:orange;
+								          -moz-transform: scale(1) rotate(0deg) translate(0px, 0px) skew(-12deg, -15deg);
+									  -webkit-transform: scale(1) rotate(0deg) translate(0px, 0px) skew(-12deg, -15deg);
+									  -o-transform: scale(1) rotate(0deg) translate(0px, 0px) skew(-12deg, -15deg);
+									  -ms-transform: scale(1) rotate(0deg) translate(0px, 0px) skew(-12deg, -15deg);
+transform: scale(1) rotate(0deg) translate(0px, 0px) skew(-12deg, -15deg);
+	       -moz-border-radius-topleft: 20px;
+	       -moz-border-radius-topright: 100px;
+	       -moz-border-radius-bottomright: 20px;
+	       -moz-border-radius-bottomleft: 70px;
+	       -webkit-border-radius: 20px 100px 20px 70px;
+	       border-radius: 20px 100px 20px 70px;
+	           background-image: -webkit-gradient(linear, center top, center bottom, from(#fbf925), to(#e17b19));
+		   background-image: -webkit-linear-gradient(top, #fbf925, #e17b19);
+		   background-image: -moz-linear-gradient(top, #fbf925, #e17b19);
+		   background-image: -o-linear-gradient(top, #fbf925, #e17b19);
+		   background-image: -ms-linear-gradient(top, #fbf925, #e17b19);
+		   background-image: linear-gradient(top, #fbf925, #e17b19);
+		   -webkit-box-shadow: 0 3px 7px rgba(0,0,0,0.75);
+		   -moz-box-shadow: 0 3px 7px rgba(0,0,0,0.75);
+		   box-shadow: 0 3px 7px rgba(0,0,0,0.75);
+}
+.shadow{
+	    -webkit-box-shadow: -4px 0 5px rgba(0,0,0,0.75);
+	    -moz-box-shadow: -4px 0 5px rgba(0,0,0,0.75);
+	    box-shadow: -4px 0 5px rgba(0,0,0,0.75);
+}
